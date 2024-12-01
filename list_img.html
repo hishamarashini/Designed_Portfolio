@@ -1,0 +1,75 @@
+<template rapid-name="list_img">
+    <script defer>
+        class list_img extends Component
+        {
+            onComponentLoad()
+            {
+                this.container = this.getChild("container");
+            }
+
+            getImgs(_path) {
+                //console.log(`hello: ${this.container.innerHTML.length}`)
+                if(this.container.innerHTML.length > 5)
+                {
+                    return []
+                }
+
+                const folderPath = window.location.origin + _path;
+                try {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', folderPath, false);
+                    xhr.send();
+
+                    if (xhr.status === 200) {
+                        var parser = new DOMParser();
+                        var doc = parser.parseFromString(xhr.responseText, 'text/html');
+
+                        // Extract file names from <a> tags
+                        var links = doc.querySelectorAll('a');
+                        var fileNames = [];
+                        links.forEach(function(link) {
+                            var href = link.getAttribute('href');
+
+                            // Exclude links to root, parent, or current directories
+                            if (href !== '../' && href !== '/' && !href.endsWith('/')) {
+                                fileNames.push(href);
+                            }
+                        });
+
+                        console.log(fileNames.slice(3));
+
+                        for (let index = 3; index < fileNames.length; index++) {
+                            const _img_path = fileNames[index];
+                            this.container.innerHTML += `<div class='list_img_card' style="background-image: url('${_img_path}');"></div>`;
+                        }
+
+                        return fileNames;
+                    } else {
+                        console.error("Failed to load folder contents. Status:", xhr.status);
+                        return [];
+                    }
+                } catch (error) {
+                    console.error("Error loading folder contents:", error);
+                    return [];
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .list_img_container
+        {
+            display: flex;
+
+            justify-content: start;
+            align-items: start;
+            flex-wrap: wrap;
+
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <div child-id="container" id="{id}">
+    </div>
+</template>

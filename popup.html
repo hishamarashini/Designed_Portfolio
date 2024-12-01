@@ -1,0 +1,24 @@
+<template rapid-name="popup">
+    <script defer>
+        class popup extends Component
+        {
+            onComponentLoad()
+            {
+                this.active = false;
+            }
+
+            triggerActive()
+            {
+                this.active = !this.active;
+                this.getChild("popup_container").style.display = (this.active) ? "flex" : "none";
+            }
+        }
+    </script>
+
+    <div class="popup_main" child-id="popup_container" id="{id}">
+        <div onclick="self.triggerActive()" class="popup_trigger"></div>
+        <div class="popup_card">
+            {children}
+        </div>
+    </div>
+</template>
