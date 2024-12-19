@@ -335,7 +335,7 @@ span {
    font-size: 2rem; 
    color: var(--second-bg-color);
 }
-
+/** contact form
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -376,6 +376,7 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
+    **/
 
 .footer {
    display: flex;
