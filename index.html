@@ -8,6 +8,7 @@
     <!--boxd icon-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script defer type="text/javascript" src="https://spynets.github.io/RapidElements/bin/RapidElements.js" ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <div include-html="popup.html"></div>
@@ -24,7 +25,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
-           <!-- <a href="#contact">Contact</a>-->
+            <a href="#contact">Contact</a>
 
         </nav>
     </header>
@@ -64,7 +65,7 @@
                  driving engagement and growth.
                  Versatile, detail-oriented, and driven by innovation,
                  I thrive at the intersection of creativity and functionality.</p>
-            <a href="#" class="btn">Read More</a>
+            <!--<a href="#" class="btn">Read More</a>-->
         </div>
     </section>
 
@@ -77,17 +78,19 @@
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Praesentium tempore accusantium et magnam quo ipsum, 
-                   fugiat asperiores aliquam! Voluptate, neque.</p>
+                <p> Designing, and maintaining websites or web applications.
+                    It involves both frontend development
+                    (creating the visible parts of a website that users interact with, using languages like
+                    HTML, CSS, and JavaScript) and backend development (managing the server, database,
+                    and application logic to power the website).</p>
                    <a href="#" class="btn">Read More</a>  
             </div>
             <div class="services-box">
                 <i class='bx bxs-paint' ></i>
                 <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Praesentium tempore accusantium et magnam quo ipsum, 
-                   fugiat asperiores aliquam! Voluptate, neque.</p>
+                <p>Graphic design is the art of visually communicating ideas and messages using typography,
+                color, imagery, and layout. It involves creating designs for various mediums, such as print,
+                digital platforms, branding, and advertising, to convey a clear and engaging message. </p>
                    <a href="#" class="btn">Read More</a>  
             </div>
             <div class="services-box">
@@ -159,11 +162,11 @@
         </div>
      </section>
 
-      <!-- contact section design 
+      <!--contact section design-->  
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="email.php" method="post">
+        <form action="https://api.emailjs.com/api/v1.0/email/send" method="post">
            <div class="input-box">
             <input type="text" placeholder="Full Name.." type="text" required>
             <input type="email" placeholder="Email Address" type="email" required>
@@ -175,7 +178,7 @@
            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
            <input type="submit" value="Send Message" class="btn" target="_blank">
         </form>
-      </section>  -->
+       </section>  
 
       <!-- footer design -->
        <footer class="footer">
@@ -194,5 +197,12 @@
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
 
     <script src="js/script.js"></script>
+
+    <script>
+        emailjs.init('YOUR_USER_ID');
+
+    </script>
+
+
 </body>
 </html>
