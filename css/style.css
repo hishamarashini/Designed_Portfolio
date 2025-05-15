@@ -225,15 +225,7 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.services-container2 {
-    background-image: url("../images/1925076_512468615529762_1213536861_n.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px 40px 10px;
-    gap: 2rem;
-    min-height: 100vh;
-}
+
 .services-container2 .services-box2 {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
@@ -253,6 +245,80 @@ span {
 .services-box2 p {
     font-size: 1.6rem;
     margin: 50rem 50 50rem;
+}
+
+.services_container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container1 {
+    background: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 600px;
+}
+.web_images {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.web_images img {
+    width: 400px;
+    height: 200px;
+}
+
+.graphic_design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.design {
+    background: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.graphic_design_images {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.graphic_design_images img {
+    width: 500px;
+    height: 300px;
+}
+
+.digital_marketing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.marketing {
+    background: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.digital_marketing_ifram {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 
