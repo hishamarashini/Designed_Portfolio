@@ -319,7 +319,11 @@ span {
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
+    justify-content: center; /* optional: centers the videos */
+    width: 750px;
+    height: 250px;
 }
+
 
 
 
