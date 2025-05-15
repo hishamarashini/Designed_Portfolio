@@ -25,7 +25,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+           <!-- <a href="#contact">Contact</a> -->
 
         </nav>
     </header>
@@ -58,13 +58,14 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Graphic Designer, Frontend Developer!, Media Marketing</h3>
-            <p>A creative professional with a passion for blending design, technology, and strategy. As a Graphic Designer,
-                 I excel in crafting visually compelling assets that communicate effectively. As a Frontend Developer,
-                 I bring designs to life with clean, user-friendly code.
-                 In Media Marketing, I create impactful campaigns that resonate with target audiences,
-                 driving engagement and growth.
-                 Versatile, detail-oriented, and driven by innovation,
-                 I thrive at the intersection of creativity and functionality.</p>
+            <p>I’m a creative and versatile professional specializing in Graphic Design, 
+            Frontend Development, and Media Marketing. With a passion for blending visual design, 
+            technology, and strategic communication, I craft compelling digital experiences that are 
+            both beautiful and functional. As a Graphic Designer, I create visually engaging assets 
+            that effectively tell a story. As a Frontend Developer, I translate those designs into clean, 
+            responsive, and user-friendly interfaces. In Media Marketing, 
+            I design impactful campaigns that connect with audiences and drive measurable results. 
+            Detail-oriented and driven by innovation, I thrive at the intersection of creativity and performance.</p>
             <!--<a href="#" class="btn">Read More</a>-->
         </div>
     </section>
@@ -72,7 +73,7 @@
     <!--service section design  -->
 
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
             <div class="services-box">
@@ -104,66 +105,69 @@
 
     <!--  POP UPP for portfolio design     -->
 
-    <popup id="mahal_popup">
-        <list_img id="mahal_list"></list_img>
-    </popup>
-
-    <popup id="wajeha_popup">
-        <list_img id="wajeha_list"></list_img>
-    </popup>
-
-    <!-- portfolio section design -->
-     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/CARD-mahal.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Graphic Design</h4>
-                    <p>Business Card </p>
-                    <a onclick="getInstanceById('mahal_popup').triggerActive(); getInstanceById('mahal_list').getImgs('/images/mahal/')"><i class='bx bx-link-external'></i></a>
+    <!--
+        <popup id="mahal_popup">
+            <list_img id="mahal_list"></list_img>
+        </popup>
+    
+        <popup id="wajeha_popup">
+            <list_img id="wajeha_list"></list_img>
+        </popup>
+    
+        //portfolio section design// 
+         <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+    
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/CARD-mahal.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Graphic Design</h4>
+                        <p>Business Card </p>
+                        <a onclick="getInstanceById('mahal_popup').triggerActive(); getInstanceById('mahal_list').getImgs('/images/mahal/')"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+    
+                <div class="portfolio-box">
+                    <img src="images/wajeha.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>BOOKS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus corrupti architecto alias nisi nulla ratione at, 
+                            quae dicta libero dolore!</p>
+                            <a onclick="getInstanceById('wajeha_popup').triggerActive(); getInstanceById('wajeha_list').getImgs('/images/wajeha/')"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-box">
+                    <img src="images/wajhaa2.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Magazines</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus corrupti architecto alias nisi nulla ratione at, 
+                            quae dicta libero dolore!</p>
+                            <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-box">
+                    <img src="images/Life-travel.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Graphic Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus corrupti architecto alias nisi nulla ratione at, 
+                            quae dicta libero dolore!</p>
+                            <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
                 </div>
             </div>
-            
+         </section>
+    -->
 
-            <div class="portfolio-box">
-                <img src="images/wajeha.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>BOOKS</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Minus corrupti architecto alias nisi nulla ratione at, 
-                        quae dicta libero dolore!</p>
-                        <a onclick="getInstanceById('wajeha_popup').triggerActive(); getInstanceById('wajeha_list').getImgs('/images/wajeha/')"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/wajhaa2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Magazines</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Minus corrupti architecto alias nisi nulla ratione at, 
-                        quae dicta libero dolore!</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/Life-travel.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Graphic Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Minus corrupti architecto alias nisi nulla ratione at, 
-                        quae dicta libero dolore!</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-        </div>
-     </section>
 
       <!--contact section design-->  
-      <section class="contact" id="contact">
+     <!-- <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
         <form action="https://api.emailjs.com/api/v1.0/email/send" method="post">
@@ -178,7 +182,7 @@
            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
            <input type="submit" value="Send Message" class="btn" target="_blank">
         </form>
-       </section>  
+       </section> --> 
 
       <!-- footer design -->
        <footer class="footer">
